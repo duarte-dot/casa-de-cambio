@@ -1,0 +1,90 @@
+body {
+  background-color: #4A4F59;
+  color: white;
+  font-family: 'Fira Code', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.moedas {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  width: 900px;
+  min-height: 583px;
+ }
+
+.rates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.moedas .titulo {
+  text-align: center;
+  padding: 10px;
+}
+
+.rates div {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 5px;
+  width: 150px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+}
+
+.pesquisar-area {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+h1, label, .pesquisar-area {
+  width: 900px;
+}
+
+.pesquisar {
+  background-color: #96EB95;
+  border: none;
+  border-radius: 5px;
+  width: 171px;
+  height: 48px;
+  font-family: 'Fira Code', monospace;
+  color: #4A4F59;
+  font-size: 20px;  
+  padding: 0;
+  margin-left: 10px;
+}
+
+.text {
+  border: none;
+  border-radius: 5px;
+  padding: 0;
+  width: 171px;
+  height: 48px;
+  padding-left: 10px;
+}
+
+h1 strong {
+  color: #96EB95;
+}
+
+label {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  h1, label, .pesquisar-area, .moedas {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1, label, .pesquisar-area, .moedas {
+    width: 300px;
+  }
+}
